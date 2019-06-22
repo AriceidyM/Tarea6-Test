@@ -11,7 +11,7 @@ namespace TareaTest.Entidades
     {
 
         [Key]
-        public int IdDetallecompra { get; set; }
+        public int IdDetalleCompra { get; set; }
         public int IdCompra { get; set; }
         public int IdProducto { get; set; }
         public double Unidades { get; set; }
@@ -20,7 +20,7 @@ namespace TareaTest.Entidades
 
         public DetalleCompra()
         {
-            IdDetallecompra = 0;
+            IdDetalleCompra = 0;
             IdCompra = 0;
             IdProducto = 0;
             Unidades = 0;

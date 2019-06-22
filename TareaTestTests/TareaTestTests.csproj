@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -46,6 +52,7 @@
       <HintPath>..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -56,10 +63,30 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="BLL\RepositorioTests.cs" />
+    <Compile Include="BLL\CargosTests.cs" />
+    <Compile Include="BLL\CategoriasTests.cs" />
+    <Compile Include="BLL\ClientesTests.cs" />
+    <Compile Include="BLL\ComprasTests.cs" />
+    <Compile Include="BLL\DetalleCompraTests.cs" />
+    <Compile Include="BLL\DetalleVentaTests.cs" />
+    <Compile Include="BLL\EmpleadosTests.cs" />
+    <Compile Include="BLL\EstadosTests.cs" />
+    <Compile Include="BLL\ImagenesTests.cs" />
+    <Compile Include="BLL\MarcasTests.cs" />
+    <Compile Include="BLL\ModelosTests.cs" />
+    <Compile Include="BLL\PermisosTests.cs" />
+    <Compile Include="BLL\PersonasTests.cs" />
+    <Compile Include="BLL\ProductosTests.cs" />
+    <Compile Include="BLL\ProveedoresTests.cs" />
+    <Compile Include="BLL\TipoComprovanteTests.cs" />
+    <Compile Include="BLL\TipoPersonaTests.cs" />
+    <Compile Include="BLL\UnidadMedidaTests.cs" />
+    <Compile Include="BLL\UsuariosTests.cs" />
+    <Compile Include="BLL\VentasTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
